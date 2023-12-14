@@ -15,7 +15,7 @@ declare module '@react-three/fiber' {
 
 export default function Hero(){
   return <div className={styles["component"]}>
-    <Canvas className={styles["component__view"]} dpr={[1,2]}>
+    <Canvas className={styles["component__view"]} dpr={[1,2]} gl={{antialias:false}}>
       <StatsGl/>
       <OrbitControls/>
       <PerspectiveCamera makeDefault position={[0,0,5]} fov={30} />
